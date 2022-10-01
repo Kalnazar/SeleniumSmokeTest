@@ -8,8 +8,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-public class WebDriverSettings {
-    public static Properties properties = new Properties();
+public class WebDriverSettings extends GoogleDriver {
+    private Properties properties = new Properties();
 
     public WebDriverSettings() {
         BufferedReader reader;
@@ -28,4 +28,7 @@ public class WebDriverSettings {
         }
     }
 
+    public Properties getProperties() {
+        return properties;
+    }
 }
