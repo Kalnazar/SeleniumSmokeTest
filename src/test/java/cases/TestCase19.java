@@ -45,6 +45,7 @@ public class TestCase19 {
             e.printStackTrace();
         } finally {
             Thread.sleep(3000);
+            conditions.getDriver().quit();
         }
     }
 }
